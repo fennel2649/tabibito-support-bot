@@ -1,0 +1,17 @@
+guild_id = 0
+database = "data/tabibito.sqlite3"
+dry_run = true
+auto_enroll_existing = false
+
+[roles]
+support = 0 # 交流支援
+graduate = 0 # いっぱし
+operators = [0, 0] # 管理人、モデレーター。鯖主が別ロールなら必要に応じて追加
+
+[channels]
+# 空の include は全対象。スレッドは親チャンネル ID でも指定可能。
+text_include = []
+text_exclude = []
+introductions = [0]
+voice_include = []
+voice_exclude = [] # サーバーの AFK チャンネルは常に除外
